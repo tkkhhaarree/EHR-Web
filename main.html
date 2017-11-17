@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Main Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<style type="text/css">
+	html
+	{
+		background-image: url('abc.jpg');
+		background-position:center center;
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+	}
+	a { cursor: pointer; }
+	pre.one {
+    border-style: solid;
+    border-width: 1px;
+}
+pre.two {
+    border-style: solid;
+    border-width: 1px;
+}
+div {
+    box-shadow: 10px 10px 1px #888888;
+}
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+button.addehr {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button.addehr:hover{
+     background: #383;
+}
+
+
+</style>
+</head>
+<body>
+	<nav>
+            <div align="right"> 
+                <a href="main.html" >Home</a>&nbsp;
+                <a href="ehrcreate.html" >Add EHR</a>&nbsp;      
+                <a onclick="logout()" href="#">Logout</a>&nbsp;      
+            </div>
+        </nav>
+
+	<div align="left" nbsp>
+		<h3><u><font color="black">User Information</font></u></h3>	
+		<b><font size="4" face="verdana" color="blue"><pre class="one" id="userinfo"></pre></font></b>
+	</div>
+	<br><br><br>
+	<div align="left">
+		<h3><u><font color="black">EHR Details for User</font></u></h3>&nbsp;<button class="addehr" id="createEhr" onclick="createEhr()">Add New</button>
+		<font size="4" face="verdana" color="black"><b><pre class="two" id="ehrlist"></pre></font></b>
+	</div>
+
+</body>
+</html>

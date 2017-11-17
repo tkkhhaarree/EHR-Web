@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Composition Information</title>
+	<script src="js/compinfo.js"></script>
+	<style type="text/css">
+		html
+		{
+			background-image: url('abc.jpg');
+		}
+		a { cursor: pointer; }
+		a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+	</style>
+</head>
+<body>
+	<nav>
+            <div align="right"> 
+                <a href="main.html" >Home</a>&nbsp;
+                <a href="ehrcreate.html" >Add EHR</a>&nbsp;      
+                <a onclick="logout()" href="#">Logout</a>&nbsp;      
+            </div>
+        </nav>
+
+	<h3><u><font color="black">Composition Details</font></u></h3>
+	<font size="4" face="verdana" color="blue"><b><pre id="compdetail"></pre></b></font>
+</body>
+</html>
